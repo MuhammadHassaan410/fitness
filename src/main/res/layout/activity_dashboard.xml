@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dashboard_title"
+            android:textColor="@color/text_primary"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDashboardWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/dashboard_subtitle"
+            android:textColor="@color/text_secondary" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:useDefaultMargins="true">
+
+            <TextView
+                android:id="@+id/cardSchedule"
+                style="@style/DashboardCard"
+                android:text="📅&#10;Workout Schedules" />
+
+            <TextView
+                android:id="@+id/cardExercises"
+                style="@style/DashboardCard"
+                android:text="🏋️&#10;Exercise Library" />
+
+            <TextView
+                android:id="@+id/cardHistory"
+                style="@style/DashboardCard"
+                android:text="📈&#10;Workout History" />
+
+            <TextView
+                android:id="@+id/cardWater"
+                style="@style/DashboardCard"
+                android:text="💧&#10;Water Intake" />
+
+            <TextView
+                android:id="@+id/cardFood"
+                style="@style/DashboardCard"
+                android:text="🥗&#10;Food &amp; Protein Teller" />
+
+            <TextView
+                android:id="@+id/cardProgress"
+                style="@style/DashboardCard"
+                android:text="🎯&#10;Progress Tracking" />
+
+            <TextView
+                android:id="@+id/cardProfile"
+                style="@style/DashboardCard"
+                android:text="👤&#10;My Profile" />
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
